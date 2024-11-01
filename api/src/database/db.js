@@ -4,7 +4,7 @@ const { Sequelize } = require("sequelize");
 const { NAME_DATABASE, PASSWORD, USERNAME } = process.env
 
 
-const sequelize = new Sequelize(NAME_DATABASE, USERNAME, PASSWORD, {
+const sequelize = new Sequelize("techware", "postgres", "postgres", {
     host: 'localhost',
     dialect: 'postgres',
     logging: false,
